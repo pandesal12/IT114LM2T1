@@ -1,0 +1,132 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --l: #0f0f0fff;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    /*background-color: red;*/
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: var(--l);
+    top: 0px;
+    width: 100%;
+    height: 140px;
+    box-shadow: 0px 10px 15px 5px rgb(0, 0, 0, 0.5);
+}
+
+footer {
+    position: absolute;
+    background-color: var(--l);
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px -10px 15px 5px rgb(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 25px
+}
+
+.rounded {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%
+}
+
+.textSpinner {
+    /*background-color: blue;*/
+    height: 35px;
+    overflow: hidden;
+}
+
+.textSpinner div {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    animation: slider 2.5s cubic-bezier(.79,-0.01,.29,.98) infinite alternate;
+}
+
+@keyframes slider {
+    from {
+        
+    } 
+    to {
+        transform: translateY(-35px);
+    }
+}
+
+.title {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+
+
+.contentplaceContainer {
+/*    background-color: red;
+    margin-top: 140px;
+    margin-bottom: 100px;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.reflectionContainer {
+    width: 500px;
+    text-align: justify;
+}
+
+.titleRef {
+    font-weight: 700;
+}
+

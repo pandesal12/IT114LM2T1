@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Module2Topic1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="master.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="profileContainer">
+            <img class="rounded" src="/profile.jpg" />
+            <div class="textSpinner">
+                <div>
+                    <span>&lt;/pandesal12&gt;</span>
+                    <span>&lt;/Aldrine&gt;</span>
+                </div>
+
+            </div>
+        </div>
+        <span class="title">Module 2 Topic 1</span>
+        <div class="nav">
+            <a href="Exercise1.aspx">Exercise 1</a>
+            <a href="Exercise2.aspx">Exercise 2</a>
+            <a href="Exercise3.aspx">Exercise 3</a>
+            <a href="Exercise4.aspx">Exercise 4</a>
+        </div>
+    </header>
+
+
+    <footer>
+        <span>Copyright: John Aldrine F. Lim 2024</span>
+    </footer>
+
+    
+    
+    <div class="contentplaceContainer">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    
+</body>
+</html>

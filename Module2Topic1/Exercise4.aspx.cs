@@ -13,5 +13,10 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void Unnamed5_Click(object sender, EventArgs e) {
+            if (!(age.Text == "" || email.Text == "" || confirmEmail.Text == "")) result.Text = $"<br />Name: {fullName.Text}<br/>Age: {age.Text}<br/>Email: {email.Text}";
+            else result.Text = $"Make sure all fields are filled out!";
+        }
     }
 }
