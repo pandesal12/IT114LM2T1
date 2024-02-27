@@ -17,17 +17,17 @@ namespace Module1Exercise1
         protected void Unnamed2_Click(object sender, EventArgs e) {
             string percentage = percentageGrade.Text;
             if (double.TryParse(percentage, out double equi) && (equi >= 0 && equi <= 100)) {
-                if (equi > 95.00 && equi <= 100) {
+                if (equi >= 96.00 && equi <= 100) {
                     finalGrade.Text = "1.00";
                     Response.Write($"<script>alert('Congratulations! Your Final grade is {finalGrade.Text}')</script>");
-                } else if (equi <= 95.00 && equi >= 90.00) finalGrade.Text = "1.25";
-                else if (equi < 90.00 && equi >= 85.00) finalGrade.Text = "1.50";
-                else if (equi < 85.00 && equi >= 80.00) finalGrade.Text = "1.75";
-                else if (equi < 80.00 && equi >= 75.00) finalGrade.Text = "2.00";
-                else if (equi < 75.00 && equi >= 70.00) finalGrade.Text = "2.25";
-                else if (equi < 70.00 && equi >= 65.00) finalGrade.Text = "2.50";
-                else if (equi < 65.00 && equi >= 63.00) finalGrade.Text = "2.75";
-                else if (equi < 63.00 && equi >= 60.00) finalGrade.Text = "3.00";
+                } else if (equi <= 96.00 && equi >= 91.51) finalGrade.Text = "1.25";
+                else if (equi < 91.51 && equi >= 87.01) finalGrade.Text = "1.50";
+                else if (equi < 87.01 && equi >= 82.51) finalGrade.Text = "1.75";
+                else if (equi < 82.51 && equi >= 78.01) finalGrade.Text = "2.00";
+                else if (equi < 78.01 && equi >= 73.51) finalGrade.Text = "2.25";
+                else if (equi < 73.51 && equi >= 69.01) finalGrade.Text = "2.50";
+                else if (equi < 69.01 && equi >= 64.51) finalGrade.Text = "2.75";
+                else if (equi < 64.51 && equi >= 60.00) finalGrade.Text = "3.00";
                 else if (equi < 60.00) finalGrade.Text = "5.00";
                 
             } else {
